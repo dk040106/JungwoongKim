@@ -76,10 +76,23 @@ h1 {
 
 h2 {
   font-size: 36px;
+  margin-top: 50px;
+  border-top: 3px solid #ff4000;
+  padding-top: 10px;
 }
 
 li,
 p {
   line-height: 1.8;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 940px) {
+  body {
+    padding: 6px;
+  }
 }

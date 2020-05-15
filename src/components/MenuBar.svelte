@@ -30,7 +30,7 @@
   .title {
     font-size: 48px;
     margin-right: 36px;
-    font-weight: 100;
+    font-weight: 150;
   }
 </style>
 

@@ -25,7 +25,7 @@
   main {
     text-align: left;
     padding: 1em;
-    max-width: 720px;
+    max-width: 960px;
     margin: 0 auto;
   }
 </style>
