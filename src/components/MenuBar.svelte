@@ -14,7 +14,7 @@
   }
   ul {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
   }
@@ -32,12 +32,25 @@
     margin-right: 36px;
     font-weight: 150;
   }
+  @media (max-width: 940px) {
+    /*
+  화면 크기가 줄어들면 h1을 나머지와 분리한다.
+  */
+    ul {
+      flex-direction: column;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  }
 </style>
 
 <div class="tabs">
   <ul>
-    <li class="title" on:click={() => dispatch('tabChange', 'title')}>
-      {title}
+    <li>
+      <div class="title" on:click={() => dispatch('tabChange', 'title')}>
+        {title}
+      </div>
     </li>
     {#each items as item}
       <li on:click={() => dispatch('tabChange', item)}>
