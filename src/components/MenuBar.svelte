@@ -32,9 +32,9 @@
     margin-right: 36px;
     font-weight: 150;
   }
-  @media (max-width: 940px) {
+  @media screen and (max-width: 940px) {
     /*
-  화면 크기가 줄어들면 h1을 나머지와 분리한다.
+  화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다. 
   */
     ul {
       flex-direction: column;
