@@ -91,7 +91,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
   /*
   화면 크기가 줄어들면 전체적인 padding을 줄인다. 
   */

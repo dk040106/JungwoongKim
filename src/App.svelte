@@ -1,14 +1,15 @@
 <script>
-  import MenuBar from "./components/MenuBar.svelte";
-  import Footer from "./components/Footer.svelte";
-  import Home from "./components/Home.svelte";
-  import AboutMe from "./components/AboutMe.svelte";
-  import Projects from "./components/Projects.svelte";
-  import Goals from "./components/Goals.svelte";
+  import MenuBar from "./components/layouts/MenuBar.svelte";
+  import Footer from "./components/layouts/Footer.svelte";
+
+  import Home from "./components/contents/Home.svelte";
+  import AboutMe from "./components/contents/AboutMe.svelte";
+  import Projects from "./components/contents/Projects.svelte";
+  import Goals from "./components/contents/Goals.svelte";
 
   export let name;
 
-  // tabs
+  // contents
   let items = ["Home", "About Me", "Projects", "Goals"];
   let activeItem = "Home";
   let title = name;

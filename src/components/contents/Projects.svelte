@@ -1,7 +1,12 @@
 <style>
   img {
-    height: 120px;
-    display: block;
+    width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+    img {
+      height: 150px;
+      width: inherit;
+    }
   }
 </style>
 
