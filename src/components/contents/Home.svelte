@@ -5,8 +5,8 @@
   let page = {
     title: "Nice to meet you.",
     description: [
-      "This is a blog of myself, pushing me to look back and to go forward.",
-      "There aren't much things here now, but I will make this place much better!"
+      "This is a blog of myself, to look back and to go forward.",
+      "There aren't much things here now, but I'll make this place much better!"
     ]
   };
 </script>

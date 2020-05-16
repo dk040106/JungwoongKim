@@ -1,4 +1,6 @@
 <script>
+  let name = "Jungwoong Kim";
+  let description = ["Student at KMLA"];
   let contacts = [
     {
       link: "https://github.com/dk040106",
@@ -37,7 +39,7 @@
     margin-bottom: 20px;
   }
   img.contact {
-    width: 24px;
+    width: 36px;
     margin: 8px 6px;
   }
   .copyright {
@@ -50,8 +52,10 @@
 <div class="profile">
   <img src="img/my-face.jpg" alt="my face" class="face" />
   <div class="content">
-    <h2>Jungwoong Kim</h2>
-    <h3>Student at KMLA</h3>
+    <h2>{name}</h2>
+    {#each description as d}
+      <h3>{d}</h3>
+    {/each}
     <div>
       {#each contacts as contact}
         <a href={contact.link}>
@@ -60,7 +64,7 @@
       {/each}
     </div>
     <div class="copyright">
-      Social icons by
+      Icons by
       <a target="_blank" href="https://icons8.com">Icons8</a>
     </div>
   </div>
