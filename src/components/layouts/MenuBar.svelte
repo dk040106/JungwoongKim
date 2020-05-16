@@ -9,7 +9,7 @@
 
 <style>
   .tabs {
-    margin: 30px 20px;
+    margin: 20px 20px;
     border-bottom: solid rgb(145, 145, 145) 2px;
   }
   ul {
@@ -32,7 +32,7 @@
     margin-right: 36px;
     font-weight: 150;
   }
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 1020px) {
     /*
   화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다. 
   */

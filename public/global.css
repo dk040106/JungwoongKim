@@ -70,17 +70,6 @@ button:focus {
   border-color: #666;
 }
 
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-top: 50px;
-  border-top: 3px solid #ff4000;
-  padding-top: 10px;
-}
-
 li,
 p {
   line-height: 1.8;
@@ -91,7 +80,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1020px) {
   /*
   화면 크기가 줄어들면 전체적인 padding을 줄인다. 
   */

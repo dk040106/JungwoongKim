@@ -6,11 +6,12 @@
   import AboutMe from "./components/contents/AboutMe.svelte";
   import Projects from "./components/contents/Projects.svelte";
   import Goals from "./components/contents/Goals.svelte";
+  import Posts from "./components/contents/Posts.svelte";
 
   export let name;
 
   // contents
-  let items = ["Home", "About Me", "Projects", "Goals"];
+  let items = ["Home", "About Me", "Projects", "Goals", "Posts"];
   let activeItem = "Home";
   let title = name;
   const tabChangeHandler = event => {
@@ -41,6 +42,8 @@
     <Projects />
   {:else if activeItem == 'Goals'}
     <Goals />
+  {:else if activeItem == 'Posts'}
+    <Posts />
   {/if}
 </main>
 <Footer />

@@ -3,21 +3,21 @@
   import Post from "../templates/Post.svelte";
 
   let page = {
-    title: "Projects",
-    description: ["These are some projects I do for myself."]
+    title: "Posts",
+    description: []
   };
   let posts = [
     {
       title: "Chartreux",
-      img: { src: "img/chartreux.png", alt: "chartreux os icon" },
+      img: null,
       paragraph:
         "An Operating System, made in Rust language. Not that great, cause I don't think I know much about OS. Just a project for testing how much I know about OS."
     },
     {
       title: "MinsaCraft",
-      img: { src: "img/minsacraft-full.png", alt: "minsacraft icon" },
+      img: null,
       paragraph:
-        "    A website for KMLA's virtual(MineCraft) campus. Made in svelte, and it supports MineCraft Api for getting the server status."
+        "A website for KMLA's virtual(MineCraft) campus. Made in svelte, and it supports MineCraft Api for getting the server status."
     }
   ];
 </script>
@@ -26,7 +26,7 @@
 
 </style>
 
-<div class="projects">
+<div class="posts">
   <Page {page} />
   <Post {posts} />
 </div>
