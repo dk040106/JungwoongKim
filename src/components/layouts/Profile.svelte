@@ -32,8 +32,9 @@
     margin: 48px 20px;
     max-width: 240px;
   }
-  img {
+  img.face {
     width: 100%;
+    margin-bottom: 20px;
   }
   img.contact {
     width: 24px;
@@ -44,34 +45,23 @@
     font-size: 12px;
     margin-top: 10px;
   }
-
-  .face {
-    margin-bottom: 20px;
-  }
-  @media screen and (max-width: 1020px) {
-    .profile {
-      display: none;
-    }
-  }
 </style>
 
 <div class="profile">
-  <div class="face">
-    <img src="img/my-face.jpg" alt="my face" />
-  </div>
-  <div class="description">
+  <img src="img/my-face.jpg" alt="my face" class="face" />
+  <div class="content">
     <h2>Jungwoong Kim</h2>
     <h3>Student at KMLA</h3>
-  </div>
-  <div>
-    {#each contacts as contact}
-      <a href={contact.link}>
-        <img src={contact.img.src} alt={contact.img.alt} class="contact" />
-      </a>
-    {/each}
-  </div>
-  <div class="copyright">
-    Social icons by
-    <a target="_blank" href="https://icons8.com">Icons8</a>
+    <div>
+      {#each contacts as contact}
+        <a href={contact.link}>
+          <img src={contact.img.src} alt={contact.img.alt} class="contact" />
+        </a>
+      {/each}
+    </div>
+    <div class="copyright">
+      Social icons by
+      <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
   </div>
 </div>

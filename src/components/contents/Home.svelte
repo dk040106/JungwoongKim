@@ -16,13 +16,18 @@
     display: flex;
     align-items: flex-start;
   }
+  @media screen and (max-width: 1020px) {
+    .home {
+      flex-direction: column;
+    }
+  }
 </style>
 
 <div class="home">
   <div class="content">
     <Page {page} />
   </div>
-  <div class="content">
+  <div class="profile">
     <Profile />
   </div>
 </div>
