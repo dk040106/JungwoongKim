@@ -12,6 +12,14 @@
     margin: 20px 20px;
     border-bottom: solid rgb(145, 145, 145) 2px;
   }
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +53,7 @@
   }
 </style>
 
-<div class="tabs">
+<div class="tabs noselect">
   <ul>
     <li>
       <div class="title" on:click={() => dispatch('tabChange', 'title')}>
