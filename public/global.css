@@ -80,7 +80,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1060px) {
   /*
   화면 크기가 줄어들면 전체적인 padding을 줄인다. 
   */

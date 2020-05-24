@@ -32,10 +32,10 @@
     margin-right: 36px;
     font-weight: 150;
   }
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1060px) {
     /*
-  화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다. 
-  */
+    화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다. 
+    */
     ul {
       flex-direction: column;
     }
