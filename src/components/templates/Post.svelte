@@ -1,4 +1,6 @@
 <script>
+  import marked from "marked";
+
   export let posts;
 </script>
 
@@ -32,6 +34,8 @@
     {#if post.img !== null}
       <img src={post.img.src} alt={post.img.alt} />
     {/if}
-    <p>{post.paragraph}</p>
+    <p>
+      {@html marked(post.paragraph)}
+    </p>
   {/each}
 </div>

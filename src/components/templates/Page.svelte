@@ -1,4 +1,6 @@
 <script>
+  import marked from "marked";
+
   export let page;
 </script>
 
@@ -12,6 +14,8 @@
 <div>
   <h1>{page.title}</h1>
   {#each page.description as d}
-    <p>{d}</p>
+    <p>
+      {@html marked(d)}
+    </p>
   {/each}
 </div>

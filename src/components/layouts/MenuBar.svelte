@@ -51,6 +51,11 @@
       margin-bottom: 15px;
     }
   }
+  @media (prefers-color-scheme: dark) {
+    li {
+      color: azure;
+    }
+  }
 </style>
 
 <div class="tabs noselect">

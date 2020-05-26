@@ -7,6 +7,7 @@ body {
 
 body {
   color: #333;
+  background-color: azure;
   margin: 0;
   padding: 36px;
   box-sizing: border-box;
@@ -76,15 +77,32 @@ p {
   font-size: 24px;
 }
 
-p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 @media screen and (max-width: 1060px) {
   /*
   화면 크기가 줄어들면 전체적인 padding을 줄인다. 
   */
   body {
     padding: 6px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: azure;
+    background-color: #333;
+  }
+  img {
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  a {
+    color: rgb(144, 194, 237);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(103, 146, 239);
   }
 }
