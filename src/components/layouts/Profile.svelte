@@ -51,11 +51,14 @@
 
 <div class="profile">
   <img src="img/my-face.jpg" alt="my face" class="face" />
+
   <div class="content">
     <h2>{name}</h2>
+
     {#each description as d}
       <h3>{d}</h3>
     {/each}
+
     <div>
       {#each contacts as contact}
         <a href={contact.link}>
@@ -63,6 +66,7 @@
         </a>
       {/each}
     </div>
+
     <div class="copyright">
       Icons by
       <a target="_blank" href="https://icons8.com">Icons8</a>

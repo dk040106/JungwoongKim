@@ -1,16 +1,19 @@
 <script>
+  // page layouts (not changed frequently)
   import MenuBar from "./components/layouts/MenuBar.svelte";
   import Footer from "./components/layouts/Footer.svelte";
 
+  // page contents
   import Home from "./components/contents/Home.svelte";
   import AboutMe from "./components/contents/AboutMe.svelte";
   import Projects from "./components/contents/Projects.svelte";
   import Goals from "./components/contents/Goals.svelte";
   import Readings from "./components/contents/Readings.svelte";
 
+  // my name
   export let name;
 
-  // contents
+  // tabs
   let items = ["Home", "About Me", "Projects", "Goals", "Readings"];
   let activeItem = "Home";
   let title = name;

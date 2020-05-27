@@ -1,6 +1,8 @@
 <script>
+  // markdown formatter
   import marked from "marked";
 
+  // contents
   export let page;
 </script>
 

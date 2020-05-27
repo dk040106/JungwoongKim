@@ -1,7 +1,9 @@
 <script>
+  // templates
   import Page from "../templates/Page.svelte";
   import Profile from "../layouts/Profile.svelte";
 
+  // contents
   import { Home } from "../../posts/posts.js";
 </script>
 
@@ -18,10 +20,6 @@
 </style>
 
 <div class="home">
-  <div class="content">
-    <Page page={Home} />
-  </div>
-  <div class="profile">
-    <Profile />
-  </div>
+  <Page page={Home} />
+  <Profile />
 </div>
