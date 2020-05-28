@@ -15,6 +15,7 @@
   @media screen and (max-width: 1060px) {
     .home {
       flex-direction: column;
+      align-items: center;
     }
   }
 </style>
