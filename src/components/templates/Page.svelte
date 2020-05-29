@@ -1,4 +1,6 @@
 <script>
+  import { fade } from "svelte/transition";
+
   // markdown formatter
   import marked from "marked";
 
@@ -13,7 +15,7 @@
   }
 </style>
 
-<div>
+<div in:fade>
   <h1>{page.title}</h1>
   {#each page.description as d}
     <p>
