@@ -4,6 +4,7 @@
 
   // contents
   export let posts;
+  console.log(posts);
 </script>
 
 <style>
@@ -30,10 +31,10 @@
 <div>
   {#each posts as post}
     <h2>{post.title}</h2>
-    {#if post.subtitle !== null}
+    {#if post.subtitle !== undefined}
       <h3>{post.subtitle}</h3>
     {/if}
-    {#if post.img !== null}
+    {#if post.img !== undefined}
       <img src={post.img.src} alt={post.img.alt} />
     {/if}
     <p>

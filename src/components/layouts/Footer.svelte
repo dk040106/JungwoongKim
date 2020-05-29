@@ -8,7 +8,7 @@
     font-size: 14px;
     display: inline-block;
     padding: 20px;
-    border-top: 1px solid rgb(221, 216, 216);
+    border-top: 1px solid rgb(145, 145, 145);
   }
 </style>
 
