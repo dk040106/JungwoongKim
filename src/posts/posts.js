@@ -34,9 +34,9 @@ export const Projects = {
         "A [website](https://minsacraft.ml) for KMLA's virtual (MineCraft) campus. Made in svelte, and it supports MineCraft Api for getting the server status.",
     },
     {
-      title: "Freestyle Makers",
+      title: "Jungwoong and Juno show",
       paragraph:
-        "A [Youtube channel](https://youtube.com) about making personal gadgets with arduino and raspberry pi. Started May 2020, due to the goal I've set. Doing with my highschool friend.",
+        "A [Youtube channel](https://www.youtube.com/channel/UCFjz57a0bdlEFyAsjp9B7YQ) about making personal gadgets with arduino and raspberry pi. Started May 2020, due to the goal I've set. Doing with my highschool friend, Juno.",
     },
   ],
 };
