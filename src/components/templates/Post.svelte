@@ -31,9 +31,6 @@
 <div>
   {#each posts as post}
     <h2>{post.title}</h2>
-    {#if post.subtitle !== undefined}
-      <h3>{post.subtitle}</h3>
-    {/if}
     {#if post.img !== undefined}
       <img src={post.img.src} alt={post.img.alt} />
     {/if}
